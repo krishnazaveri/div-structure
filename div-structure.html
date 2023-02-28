@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div structure</title>
+    <style>
+        *{box-sizing: border-box;}
+        body {  margin: 0px;}
+        ::selection {background-color: aquamarine; color: black;}
+        .header {
+            height: 100%;
+            width: 100%;
+            background-color: antiquewhite;
+            display: flex;
+
+        }
+
+        .header .logo {
+
+            width: 20%;
+            height: 100px;
+            background-color: aquamarine;
+            padding: 15px;
+        
+            
+        }
+
+        .header .name {
+             width: 80%; 
+             height: 100px;
+             background-color: beige;
+             display: flex; 
+             align-items: center;
+             justify-content: center;
+            
+            }
+        .nav { 
+            background-color: coral;
+            height: 50px;
+            text-align:center ;
+            line-height: 50px;
+            word-spacing: 30px;
+            
+        }
+        .nav ul { 
+            margin: 0px;
+        }
+        .nav ul li {
+             list-style: none; 
+             display: inline;
+             /* align-items: center;
+             justify-content: center; 
+             word-spacing: 40px;*/
+            }
+        .nav ul li a {
+            text-decoration: none;
+            color: brown;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-shadow: 0 1px 2px #fff;
+            
+        
+        }
+        .nav ul li a:hover {
+
+            color:black;
+            text-decoration: underline;
+            
+        
+            
+        }
+
+        .content { 
+            background-color: lightblue;
+            display: flex;
+            height: 500px;
+            width: 100%;
+        }
+        .content .p { width:33.33%; 
+            border: 1px solid black; 
+            height: 500px;}
+
+        .content .p1 { height: 50%; 
+            background-color: aliceblue;
+            border: 1px solid black;
+        }
+        .footer { height: 100px; background-color: lightgreen;}
+    </style>
+</head>
+<body>
+
+    <!-- header start -->
+    <div class="header">
+        <div class="logo"> logo</div>
+        <div class="name">company name</div>
+        
+    </div>
+    <!-- header end -->
+     
+    <!-- nav start -->
+    <div class="nav">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">services</a></li>
+            <li><a href="">contact</a></li>
+        </ul>
+    </div>
+    <!-- nav end -->
+    <div class="content">
+
+        <div class="p">part 1</div>
+        <div class="p">                           
+            <div class="p1">up</div>
+            <div class="p1">down</div>
+        </div>
+        <div class="p">part 3</div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>
